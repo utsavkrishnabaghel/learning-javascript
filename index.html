@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>products</h1>
+
+    <script>
+        // let products = ["sw-31", "ghp-25000", "sw-61", "sw-71", "cl-352", "cl-50-army", "hp50"]
+        // let collection = ["smartwatch", "speakers", "earbuds"]
+        // let merge = products.concat(collection);
+        // console.log(merge);
+        // console.log(merge.length);
+        // let numb = 81;
+
+        // function table() {
+        //     for (i = 1; i <= 10; i++) {
+        //         console.log(`${numb} x ${i} =  ${numb*i}`);
+        //         document.write("<br>" +
+        //             numb + " x " + i + " = " + numb * i)
+
+        //     }
+
+        // }
+        // table();
+
+        // let names = ["first", "second", "third"]
+        // let names2 = "fourth?fifth";
+        // let joiner = names2.split('?');
+        // console.log(joiner);
+        // * THE ARGUMENTS OBJECTS *//
+        // function add() {
+        //     if (arguments.length == 0) {
+        //         console.log("no arguments added !");
+
+        //     } else {
+        //         sum = 0;
+        //         for (i = 0; i < arguments.length; i++)
+        //             sum = sum + arguments[i];
+        //         console.log(sum);
+        //     }
+
+        // }
+        // add(3);
+
+        // anonymous functions
+
+
+        // (function() {
+        //     console.log("hello world !");
+        // })();
+
+        // let first = "hello";
+
+
+        // function Bass() {
+        //     let first = "hello";
+        //     console.log(first);
+        // }
+        // Bass();
+        // console.log(first);
+
+
+
+        // objects
+
+        // let utsav = {
+        //         firstName: "Utsav",
+        //         lastName: "Baghel",
+        //         mobile: 9717563845,
+        //         state: "New Delhi",
+        //         Address: "rz-k2-193 nihal vihar nangloi ",
+        //         pinCode: 110041
+        //     }
+        // console.log(utsav["firstName"]);
+        // console.log(utsav["lastName"]);
+        // console.log("mobile");
+
+        // utsav.experience = 2;
+        // console.log(utsav);
+
+        // delete utsav.experience;
+        // console.log(utsav);
+        // delete utsav.pinCode;
+        // delete utsav.state;
+        // delete utsav.Address;
+        // for (key in utsav) {
+        //     console.log(key + "= " + utsav[key]);
+        // }
+    </script>
+
+    <script>
+        // foreach loop
+        // let utsav = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+        // utsav.forEach(function(value, index) {
+        //     console.log(index + " " + [value + 100]);
+        // });
+
+
+
+        // object methods
+        // let utsav = {
+        //     firstName: "utsav",
+        //     lastName: "baghel",
+        //     age: 25,
+        //     address: function() {
+        //         console.log("rz-k2-193 nihal vihar nangloi");
+        //         console.log(this.lastName);
+        //     }
+        // }
+        // utsav.mobile = 9717563845;
+        // console.log(utsav);
+        // utsav.address();
+
+
+
+
+        // random functions
+
+        // let x = Math.floor(Math.random() * 100) + 1;
+        // console.log(x);
+
+        // function getRndInteger(min, max) {
+        //     console.log(Math.floor(Math.random() * (24 - 1 + 1)) + 1);
+        // }
+        // getRndInteger(1, 24);
+
+        // string manipulations
+
+        // let str1 = "hello utsav! how are you? hope you are doing well. utsav";
+        // let str2 = str1.indexOf("hope");
+        // let str2 = str1.trimStart();
+        // let str2 = str1.trimEnd();
+        // let str2 = str1.trim();
+        // let str2 = str1.toUpperCase();
+        // let str2 = str1.toLowerCase();
+        // let str2 = str1.substring(3, 6);
+        // let str2 = str1.replace("utsav", "vaishali");
+        // let str2 = str1.replace("utsav", "vaishali");
+
+
+
+        // console.log(str1);
+        // console.log(str2);
+
+
+
+        // let a = ["utsav", "baghel", "sumit", "vaishali", "bob"];
+        // let b = a.splice(0, 2);
+        // console.log(a);
+
+
+
+        // date and time
+
+        // let students = {
+        //     name: "utsav baghel",
+        //     class: "b.tech",
+        //     mobile: 9717563845,
+        //     address: "nihal vihar , nangloi",
+        //     getname: function() {
+        //         return this.name;
+
+
+        //     },
+        //     get getMobile() {
+        //         return this.address.toUpperCase();
+        //     },
+        //     set setname(n) {
+        //         this.name = n.toUpperCase();
+        //         console.log(n);
+        //         console.log(n);
+
+        //     }
+
+
+        // }
+        // students.setname = "new";
+        // // console.log(students.getname());
+        // // console.log(students.getMobile);
+        // console.log(students);
+
+
+        // object constructor
+
+        // let student = {
+        //     firstName: "utsav baghel",
+        //     lastName: "baghel",
+        //     mobile: 9717563845,
+        //     age: 25
+        // }
+        // console.log(student);
+
+        // function Student(first, last, mob, age) {
+        //     this.firstName = first;
+        //     this.lastName = last;
+        //     this.mobile = mob;
+        //     this.age = age;
+        // }
+
+        // let utsav = new Student("utsav", "baghel", 8750905078, 25);
+        // let rupal = new Student("rupal", "baghel", 8750905078, 24);
+        // let sumit = new Student("sumit", "baghel", 8750905078, 29);
+
+
+        // Student.prototype.state = "delhi";
+        // console.log(utsav);
+        // console.log(rupal);
+        // console.log(sumit);
+    </script>
+</body>
+
+</html>
